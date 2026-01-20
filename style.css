@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
 <head>
-<link rel=“stylesheet” type=“text/css” href=“style.css”/>
-</head>
-<!--  <head>
     <meta charset="utf-8">
     <title>Tim's Gaming Lounge</title>
     <style media="screen">
@@ -51,30 +46,4 @@
       }
     </style>
 
-  </head>-->
-  <body>
-    <h1>Tim's Gaming Lounge</h1>
-    <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a href="gamingnews.html">Gaming News</a></li>
-     <li><a href="contact.html">Contact</a></li>
-     <li><a href="AboutUs.html">About Me</a></li>
-    </ul>
-
-    <pre>Hello, I am timothy fielder and this is my website where
-I like to talk about and maybe even try designing video games.
-You can find all my opinions on the games I play here as well
-as see what games I'm currently playing. This is my first website
-I am programming from scratch to bear with me as I learn the
-best ways to design it</pre>
-
-<p>
-  title: first website
-  </p>
-  <p>description: this will be the start of my project</p>
-  <p>
-  link: timfitheg6.github.io
-</p>
-
-  </body>
-</html>
+  </head>
