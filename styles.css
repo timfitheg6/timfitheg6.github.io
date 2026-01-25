@@ -6,81 +6,83 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060B0D", endColorstr="#00008B", GradientType=1);
 }
 
-      h1 {
-        color: white;
-        text-align: center;
-      }
-      h2 {
-        color: white;
-        text-align: center;
-      }
-      p {
-        color: white;
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
-        font-size: 20px;
-      }
-      p2 {
-        color: white;
+h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+p {
+  color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 20px;
+}
+p2 {
+  color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+pre {
+  color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #00008B;
+  display: flex;
+  justify-content: center;
+}
 
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
-        font-size: 20px;
-        text-align: center;
-      }
-      pre {
-        color: white;
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
-        font-size: 20px;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        background-color: #00008B;
-        display: flex;
-        justify-content: center;
-      }
+ul li {
+  float: left;
+}
 
-      ul li {
-        float: left;
-      }
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-      ul li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
+ul li a:hover {
+  background-color: #8A2BE2;
+}
 
-      ul li a:hover {
-        background-color: #8A2BE2;
-      }
+.sidebar{
+  width: 50%;
+  float: right;
+}
+.content{
+  float: left;
+  width: 45%;
 
-      .sidebar{
-        width: 50%;
-        float: right;
-      }
-      .content{
-        float: left;
-        width: 45%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+iframe{
+  display:block;
+  margin: auto
+}
+input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
 
-        margin-right: 10px;
-        margin-left: 10px;
-      }
-      iframe{
-        display:block;
-        margin: auto
-      }
-      input[type=text] {
-        float: right;
-        padding: 6px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        margin-right: 16px;
-        border: none;
-        font-size: 17px;
-
-      }
-      .header{
-
-      }
+}
+.pongtext{
+  color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 20px;
+  text-align: center;
+}
