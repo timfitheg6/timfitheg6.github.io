@@ -1,7 +1,10 @@
 body {
   background: #060B0D;
+  background: -webkit-linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
+  background: -moz-linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
   background: linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
-      }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060B0D", endColorstr="#00008B", GradientType=1);
+}
 
       h1 {
         color: white;
