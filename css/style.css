@@ -308,6 +308,8 @@ h2 {
   margin: 0 auto;
 }
 
+
+
 #blog{
   margin-bottom: 50px;
 }
@@ -368,8 +370,44 @@ h2 {
 
 
 
+#GameReview{
+  max-width: 940px;
+  margin: 0 auto;
+}
+#GameReview .review{
+max-width: 900px;
+margin: 0 auto;
 
+}
+#GameReview .reviewView{
+  display: flex;
+  align-items: center;
 
+}
+.review{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.reviewView{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.reviewView img{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+.review-text{
+  width: 80%;
+margin: 10px 20px;
+}
 
 
 p2 {
@@ -412,7 +450,8 @@ input[type=text] {
   color: white;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  margin-right: 50px;
 }
 
 
