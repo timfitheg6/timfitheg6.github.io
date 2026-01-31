@@ -2,14 +2,14 @@
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+Base styles: opinionated defaults
+========================================================================== */
 
 html {
   color: #222;
@@ -18,11 +18,11 @@ html {
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Customize the background color to match your design.
+*/
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -35,8 +35,8 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
- */
+* A better looking default horizontal rule
+*/
 
 hr {
   display: block;
@@ -48,10 +48,10 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
 
 audio,
 canvas,
@@ -63,8 +63,8 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
+* Remove default fieldset styles.
+*/
 
 fieldset {
   border: 0;
@@ -73,144 +73,167 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+* Allow only vertical resizing of textareas.
+*/
 
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-   body {
-     font-family: "Comic Sans MS", "Comic Sans", cursive;
-     background: #060B0D;
-     background: -webkit-linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
-     background: -moz-linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
-     background: linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060B0D", endColorstr="#00008B", GradientType=1);
-   }
+Author's custom styles
+========================================================================== */
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background: #060B0D;
+  background: -webkit-linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
+  background: -moz-linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
+  background: linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060B0D", endColorstr="#00008B", GradientType=1);
+}
+
+header{
+  width: 100%;
+  height: 140px;
+
+}
+
+.site-header {
+  width: 100%;
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically centers the image and content */
+  justify-content: left; /* Pushes the left and right elements to the edges (optional, for navigation on right) */
+  padding: 10px 0px; /* Add some spacing */
+  background-color: transparent; /* Example background color */
+  background-image: url("logo.jpg");
+  background-size: 100% 100%;
+}
+.site-header h1{
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
+}
+.site-header a{
+
+}
 
 
-   .site-header {
-     display: flex; /* Enables flexbox layout */
-     align-items: center; /* Vertically centers the image and content */
-     justify-content: left; /* Pushes the left and right elements to the edges (optional, for navigation on right) */
-     padding: 10px 0px; /* Add some spacing */
-     background-color: transparent; /* Example background color */
-     background-image: url("logo.jpg");
-      background-size: 100% 100%;
-   }
-
-   .logo {
-     /* Adjust image size as needed */
-     width: 100px;
-     height: auto;
-     margin-right: 10px; /* Space between the image and the content */
-   }
+.logo {
+  /* Adjust image size as needed */
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-right: 0px; /* Space between the image and the content */
+}
 .logo img{
   border-radius: 50%;
 }
-   .header-content {
-     /* Styles for the text/navigation container */
-     display: flex;
-     width: 100%;
-     height: auto;
+.header-content {
+  /* Styles for the text/navigation container */
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column; /* Stacks H1 and NAV vertically */
+}
+.header-content ul{
+  width: 100%;
 
-     flex-direction: column; /* Stacks H1 and NAV vertically */
-   }
+}
 nav{
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-   nav a {
-     display: flex;
-     margin-right: 15px;
-     text-decoration: none;
-     color: #333;
-     flex-direction: row;
-   }
+nav a {
+  display: flex;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+  flex-direction: row;
+}
 
-   header .main-nav ,header .right-nav{
+header .main-nav ,header .right-nav{
   width: 100%;
-   height: auto;
-   line-height: 70px;
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   background-color: rgba(0, 0, 139, 0.58);
-   display: flex;
+  height: auto;
+  line-height: 70px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 139, 0.58);
+  display: flex;
 
-  }
+}
 
-  header .main-nav li{
+header .main-nav li{
+  width: 100%;
+  max-width: 120px;
   float: left;
-  }
+}
 
-  header .main-nav a , header .right-nav a{
+header .main-nav a , header .right-nav a{
   display: block;
   color: white;
   text-align: center;
-  padding: 0px 16px;
+
 
   text-decoration: none;
-  }
-  header .main-nav{
+}
+header .main-nav{
   float: left;
   justify-content: left;
-  }
-  header .right-nav{
+}
+header .right-nav{
   height: 70px;
   float: right;
   justify-content: right;
-  }
-   header{
-     width: 100%;
-     height: 140px;
+}
 
-   }
-    /**
-   #top{
-     width: 100%;
-     height: 140px
+header .right-nav input{ /*the search bar*/
+  width: 100%;
+  max-width: 300px;
+}
+
+/**
+#top{
+width: 100%;
+height: 140px
 
 
-   }
-   #top .logos{
+}
+#top .logos{
 
-   }
+}
 
-   #top .header-stuff{
-     display: flex;
-     flex-direction: row;
+#top .header-stuff{
+display: flex;
+flex-direction: row;
 
-   }
-   #top .header-text{
-     align-items: center;
-     display: flex;
-     justify-content: left;
-   }
-   #top .header-bar{
-     align-items: center;
-     display: flex;
-   }
+}
+#top .header-text{
+align-items: center;
+display: flex;
+justify-content: left;
+}
+#top .header-bar{
+align-items: center;
+display: flex;
+}
 
-   header .main-nav ,header .right-nav{
-   width: 45%;
-   height: auto;
-   line-height: 70px;
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   background-color: #00008B;
-   display: flex;
+header .main-nav ,header .right-nav{
+width: 45%;
+height: auto;
+line-height: 70px;
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: #00008B;
+display: flex;
 
- }
+}
 
- header .main-nav{
- float: left;
- justify-content: left;
+header .main-nav{
+float: left;
+justify-content: left;
 }
 header .right-nav{
 height: 70px;
@@ -253,7 +276,7 @@ h1 {
 }
 p {
   color: white;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
   font-size: 20px;
 }
 
@@ -375,8 +398,8 @@ h2 {
   margin: 0 auto;
 }
 #GameReview .review{
-max-width: 900px;
-margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 
 }
 #GameReview .reviewView{
@@ -387,6 +410,7 @@ margin: 0 auto;
 .review{
   display: flex;
   flex-direction: column;
+  max-width: 940px;
 
 }
 
@@ -398,7 +422,8 @@ margin: 0 auto;
 }
 
 .reviewView img{
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   height: auto;
   float: left;
   margin: 0 20px 10px 0;
@@ -406,31 +431,39 @@ margin: 0 auto;
 
 .review-text{
   width: 80%;
-margin: 10px 20px;
+  margin: 10px 20px;
 }
 
 
 p2 {
   color: white;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
   font-size: 20px;
   text-align: center;
 }
 pre {
   color: white;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
   font-size: 20px;
 }
 .sidebar{
   width: 50%;
   float: right;
 }
-.content{
+.Pong {
+  width: 100%;
+}
+.pongcontent{
   float: left;
-  width: 45%;
-
+  width: auto;
   margin-right: 10px;
   margin-left: 10px;
+}
+.pongtext{
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  margin-right: 50px;
 }
 iframe{
   display:block;
@@ -446,22 +479,16 @@ input[type=text] {
   font-size: 17px;
 
 }
-.pongtext{
-  color: white;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  font-size: 20px;
-  text-align: left;
-  margin-right: 50px;
-}
+
 
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+Helper classes
+========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+* Hide visually and from screen readers
+*/
 
 .hidden,
 [hidden] {
@@ -469,13 +496,13 @@ input[type=text] {
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
 
 .visually-hidden {
   border: 0;
@@ -491,10 +518,10 @@ input[type=text] {
 }
 
 /*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+* Extends the .visually-hidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
 
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
@@ -508,19 +535,19 @@ input[type=text] {
 }
 
 /*
- * Hide visually and from screen readers, but maintain layout
- */
+* Hide visually and from screen readers, but maintain layout
+*/
 
 .invisible {
   visibility: hidden;
 }
 
 /*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
+* Clearfix: contain floats
+*
+* The use of `table` rather than `block` is only necessary if using
+* `::before` to contain the top-margins of child elements.
+*/
 
 .clearfix::before,
 .clearfix::after {
@@ -533,27 +560,27 @@ input[type=text] {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
 
 @media print {
   *,
@@ -580,9 +607,9 @@ input[type=text] {
   }
 
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+  * Don't show links that are fragment identifiers,
+  * or use the `javascript:` pseudo protocol
+  */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
