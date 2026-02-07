@@ -147,6 +147,7 @@ header{
 
 }
 nav{
+
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -351,6 +352,13 @@ h2 {
 
 .blog-posts{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#dots{
+  
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 50px;
