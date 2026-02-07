@@ -84,7 +84,7 @@ textarea {
 Author's custom styles
 ========================================================================== */
 body {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Roboto", sans-serif;
   background: #060B0D;
   background: -webkit-linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
   background: -moz-linear-gradient(90deg, rgba(6, 11, 13, 1) 25%, rgba(76, 12, 166, 1) 78%, rgba(0, 0, 139, 1) 100%);
@@ -134,6 +134,13 @@ header{
   width: 100%;
   height: auto;
   flex-direction: column; /* Stacks H1 and NAV vertically */
+}
+.title {
+  /* Styles for the text/navigation container */
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row; /* Stacks H1 and NAV vertically */
 }
 .header-content ul{
   width: 100%;
@@ -190,7 +197,7 @@ header .right-nav{
 
 header .right-nav input{ /*the search bar*/
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 /**
@@ -290,7 +297,7 @@ h2 {
 #hero{
   width: 100%;
   height: 600px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%), /**/ url("ghost.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%), /**/ url("hero.png"),url("hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -489,7 +496,50 @@ input[type=text] {
 
 }
 
+.search-container{
+  position: relative;
+  width: 100%;
+  float: left;
+  justify-content:
+}
+#searchForm{
+  display: flex;
+  flex-direction: row;
+}
+.popup-list {
+  color: white;
+    display: none; /* Hide the list by default */
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 139, 0.58);
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    max-width: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 
+  }
+
+  .popup-list li {
+
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.popup-list li:hover {
+    background-color: #8A2BE2;
+}
+
+.popup-list.show {
+
+    display: block; /* Class to show the list when needed */
+}
 
 /* ==========================================================================
 Helper classes
