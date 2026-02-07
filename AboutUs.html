@@ -26,27 +26,42 @@
   <!-- Add your site or application content here -->
 
   <header class="site-header">
-      <a class="logo" href="index.html"><img src="img\icon.png" alt="Company Logo" class="logo"></a>
-      <div class="header-content">
-          <h1>Tim's Gaming Lounge</h1>
-          <nav>
-            <ul class="main-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="gamingnews.html">GamingNews</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="AboutUs.html">AboutMe</a></li>
-
-            </ul>
-            <ul class="right-nav">
-              <input type="text" placeholder="Search..">
-            </ul>
-          </nav>
+    <div class="header-content">
+      <div class="title">
+        <a class="logo" href="index.html"><img src="img\icon.png" alt="Company Logo" class="logo"></a>
+        <h1>Tim's Gaming Lounge</h1>
       </div>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gamingnews.html">GamingNews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="AboutUs.html">AboutMe</a></li>
+
+        </ul>
+        <div class="search-container">
+          <ul class="right-nav">
+            <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Search.." onkeyup="filterList()">
+              <button type="submit">Search</button>
+            </form>
+            <ul id="popupList" class="popup-list">
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
+  <section id="GameReview">
+    <h2>About Me</h2>
 
-  <h2>About Me</h2>
-
-  <p>This is where i would put an about us...if i had one</p>
-
-  </body>
+    <p>My name is Timothy Fielder, and I am a chill guy looking to get a degree in IT to better my career options. I learned about Excelsior through my dad who’s in the Air Force. I am single and living in Germany because why not. I grew up in a lot of places, mostly in America as a military brat under my dad. I moved out of America to Germany to explore Europe, which has been fun, but I need a better career and means of getting money.  I currently work as a supervisor at a Burger King, however when I was younger a did manage to get an associate’s degree in computer science.
+      I don’t have much knowledge when it comes to creating websites. The most experience I have was from high school when I took both a web design and a graphic design class but that was over ten years ago. The most critical skill for web development is understanding the website’s audience. Understanding the audience Is vital to knowing what color schemes best, what functionalities would be important to implement, and many other aspects. The audience also influences the accessibility features that get added. Second would be execution such as the programing process and arranging the elements. The soft skill of audience recognition will be easily transferable to most IT and computer science careers because I will have clients that I will develop programs, websites, and databases for. Additionally, understanding the modern standards for web design is probably expected for IT careers.
+      Unrelated to the class, my main interests are gaming and anime. If there ever comes a time that we need to make a post about something in our lives, I will most certainly find a way to mention my interests. I go to the gym regularly, but I mostly like to stay at home. I have traveled a decent amount to the other countries in Europe as well. Lastly, my main motivation and goal is to one day support a family of my own.
+      Thank you for reading
+      Timothy
+    </p>
+  </section>
+  <script src="js/app.js"></script>
+</body>
 </html>

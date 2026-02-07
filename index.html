@@ -26,33 +26,45 @@
   <!-- Add your site or application content here -->
 
   <header class="site-header">
-    <a class="logo" href="index.html"><img src="img\icon.png" alt="Company Logo" class="logo"></a>
     <div class="header-content">
-      <h1>Tim's Gaming Lounge</h1>
+      <div class="title">
+        <a class="logo" href="index.html"><img src="img\icon.png" alt="Company Logo" class="logo"></a>
+        <h1>Tim's Gaming Lounge</h1>
+      </div>
+
       <nav>
         <ul class="main-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="gamingnews.html">GamingNews</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="AboutUs.html">AboutMe</a></li>
-
         </ul>
-        <ul class="right-nav">
-          <input type="text" placeholder="Search..">
+
+        <div class="search-container">
+          <ul class="right-nav">
+            <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Search.." onkeyup="filterList()">
+              <button type="submit">Search</button>
+            </form>
+            <ul id="popupList" class="popup-list">
             </ul>
-          </nav>
-      </div>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
   </header>
 
-    <section id="hero">
-      <div class="container">
-        <div class="hero-text">
-          <p class="hero-date">1/30/26</p>
-          <h3 class="hero-title">My current game</h2>
-            <a href="GhostofYotei.html"><button type="button" name="button" class="btn-primary">check my thoughts</button></a>
 
-          </div>
+  <section id="hero">
+    <div class="container">
+      <div class="hero-text">
+        <p class="hero-date">2/07/26</p>
+        <h3 class="hero-title">My current game</h2>
+          <a href="EscapeFromDuckov.html"><button type="button" name="button" class="btn-primary">check my thoughts</button></a>
+
         </div>
+      </div>
       </section>
       <p>    Hello, I am timothy fielder and this is my website where
         I like to talk about and maybe even try designing video games.
@@ -67,6 +79,11 @@
       <p>link: timfitheg6.github.io</p>
       <p>Hello world! This is HTML5 Boilerplate2.</p>
       <script src="js/app.js"></script>
+
+
+
+
+
 
     </body>
 

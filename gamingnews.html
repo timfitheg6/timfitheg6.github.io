@@ -26,9 +26,11 @@
   <!-- Add your site or application content here -->
 
   <header class="site-header">
-    <a class="logo" href="index.html"><img src="img\icon.png" alt="Company Logo" class="logo"></a>
     <div class="header-content">
-      <h1>Tim's Gaming Lounge</h1>
+      <div class="title">
+        <a class="logo" href="index.html"><img src="img\icon.png" alt="Company Logo" class="logo"></a>
+        <h1>Tim's Gaming Lounge</h1>
+      </div>
       <nav>
         <ul class="main-nav">
           <li><a href="index.html">Home</a></li>
@@ -37,9 +39,16 @@
           <li><a href="AboutUs.html">AboutMe</a></li>
 
         </ul>
-        <ul class="right-nav">
-          <input type="text" placeholder="Search..">
-        </ul>
+        <div class="search-container">
+          <ul class="right-nav">
+            <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Search.." onkeyup="filterList()">
+              <button type="submit">Search</button>
+            </form>
+            <ul id="popupList" class="popup-list">
+            </ul>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -48,6 +57,17 @@
       <h2>Gaming News</h2>
       <p>what wonderful news we have here</p>
       <div class="blog-posts">
+
+        <div class="blog-post">
+          <a href="EscapeFromDuckov.html"><img src="img\Escape From Duckov.png" alt="Escape From Duckov"></a>
+          <p class="blog-post-date">2/07/26</p>
+          <h3>Escape From Duckov</h3>
+          <p class="blog-post-description">these are my thoughts <a href="EscapeFromDuckov.html">here</a></p>
+        </div>
+
+
+
+
         <div class="blog-post">
           <a href="GhostofYotei.html"><img src="img\ghost.jpg" alt="Ghost of Yotei"></a>
           <p class="blog-post-date">1/30/26</p>
@@ -71,17 +91,12 @@
 
         <div class="blog-post">
           <a href="godofwar.html"><img src="img/godofwar.jpg" alt="God of War"></a>
-          <p class="blog-post-date">1/30/26</p>
+          <p class="blog-post-date">1/18/26</p>
           <h3>God of War</h3>
           <p class="blog-post-description">these are my thoughts <a href="godofwar.html">here</a></p>
         </div>
 
-        <div class="blog-post">
-          <a href="404.html"><img src="icon.svg" alt="Ghost of Yotei"></a>
-          <p class="blog-post-date">1/30/26</p>
-          <h3>TBA</h3>
-          <p class="blog-post-description">these are my thoughts <a href="404.html">here</a></p>
-        </div>
+
 
         <div class="blog-post">
           <a href="404.html"><img src="icon.svg" alt="Ghost of Yotei"></a>
@@ -95,7 +110,7 @@
       </div>
     </div>
   </section>
-
+<script src="js/app.js"></script>
 
 </body>
 </html>
