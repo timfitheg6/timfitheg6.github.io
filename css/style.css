@@ -458,6 +458,10 @@ h2 {
 .review-poll label{
   color: white;
 }
+.review-poll input{
+  max-width: 300px;
+}
+
 p2 {
   color: white;
 
