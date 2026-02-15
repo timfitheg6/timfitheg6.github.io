@@ -118,3 +118,7 @@ function toggleText() {
     //moreText.style.display = "inline";
   }
 }
+function reviewcomment() {
+  window.alert("comment submitted")
+
+}
