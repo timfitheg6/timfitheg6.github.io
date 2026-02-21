@@ -1,5 +1,5 @@
 
-const data = ['Ghost of Yotei', 'Last of Us part 2', 'Pong Game', 'god of war', 'Escape From Duckov'];
+const data = ['Ghost of Yotei', 'Last of Us part 2', 'Pong Game', 'god of war', 'Escape From Duckov', 'Dont Starve', 'Demonstration'];
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Define the data source (e.g., an array of strings)
 
@@ -122,3 +122,4 @@ function reviewcomment() {
   window.alert("comment submitted")
 
 }
+
